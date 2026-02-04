@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Азамат Рахматуллин | IT Developer & Designer</title>
-    <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-<!-- Индикатор прокрутки -->
+
 <div class="scroll-progress">
     <div class="scroll-progress-bar" id="scrollProgress"></div>
 </div>
 
-<!-- Переключатель темы -->
 <div class="theme-toggle" id="themeToggle">
     <i class="fas fa-moon"></i>
 </div>
 
-<!-- Шапка -->
-<header class="header">
+<header class="header" id="header">
     <div class="header-content">
         <h1 class="fade-in">Рахматуллин Азамат Ю.</h1>
         <p class="fade-in">IT Developer | Студент IT Top College | Создаю современные проекты</p>
@@ -43,162 +40,149 @@
     </div>
 </header>
 
-<!-- Профиль -->
-<section class="section profile-section">
-    <div class="parallax-bg"
-         style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
-    <div class="container grid-2">
-        <div class="profile-card card" data-aos="fade-right" data-aos-duration="1000">
-            <div class="avatar">
-                <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Фото Азамата"
-                     onerror="this.src='https://i.pravatar.cc/300?img=13'">
+<main id="main">
+
+    <section class="section profile-section">
+        <div class="parallax-bg"
+             style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="container grid-2">
+            <div class="profile-card card" data-aos="fade-right" data-aos-duration="1000">
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Фото Азамата"
+                         onerror="this.src='https://i.pravatar.cc/300?img=13'">
+                </div>
+                <h2>Рахматуллин Азамат Юлаевич</h2>
+                <p class="info"><i class="fas fa-map-marker-alt"></i> 18 лет • Стерлитамак, Башкортостан</p>
+                <p class="bio">Студент IT Top College. Увлекаюсь изучением нового, чтением книг, разработкой и всем, что
+                    связано с технологиями. Стремлюсь создавать крутые проекты и развиваться в IT-сфере. Люблю решать
+                    сложные задачи и изучать новые технологии.</p>
             </div>
-            <h2>Рахматуллин Азамат Юлаевич</h2>
-            <p class="info"><i class="fas fa-map-marker-alt"></i> 18 лет • Стерлитамак, Башкортостан</p>
-            <p class="bio">Студент IT Top College. Увлекаюсь изучением нового, чтением книг, разработкой и всем, что
-                связано с технологиями. Стремлюсь создавать крутые проекты и развиваться в IT-сфере. Люблю решать
-                сложные задачи и изучать новые технологии.</p>
+
+            <div class="hobbies-card card" data-aos="fade-left" data-aos-duration="1000">
+                <h3>Мои увлечения</h3>
+                <ul>
+                    <li class="active"><i class="fas fa-laptop-code"></i> Программирование и разработка</li>
+                    <li><i class="fas fa-book"></i> Чтение технической литературы</li>
+                    <li><i class="fas fa-rocket"></i> Изучение новых технологий</li>
+                    <li><i class="fas fa-brain"></i> Саморазвитие и обучение</li>
+                    <li><i class="fas fa-gamepad"></i> Разработка игр</li>
+                    <li><i class="fas fa-camera"></i> Фотография и дизайн</li>
+                    <li><i class="fas fa-dumbbell"></i> Спорт и активный отдых</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Мои навыки</h2>
+            <div class="skills-list">
+                <div class="skill-tag" data-aos="zoom-in">HTML5 & CSS3</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="100">Python</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="200">UI/UX Design</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="250">Git & GitHub</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="350">Web Development</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="400">Mobile Apps</div>
+                <div class="skill-tag" data-aos="zoom-in" data-aos-delay="450">Database Design</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Услуги</h2>
+            <div class="grid-4">
+                <div class="card service-card" data-aos="zoom-in">
+                    <div class="icon-circle">
+                        <i class="fas fa-code fa-3x"></i>
+                    </div>
+                    <h3>Веб-разработка</h3>
+                    <p>Создание современных, адаптивных сайтов и веб-приложений с использованием современных технологий и
+                        фреймворков.</p>
+                </div>
+                <div class="card service-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="icon-circle">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                    </div>
+                    <h3>Мобильные приложения</h3>
+                    <p>Разработка кросс-платформенных мобильных приложений с современным UI/UX дизайном и высокой
+                        производительностью.</p>
+                </div>
+                <div class="card service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-circle">
+                        <i class="fas fa-robot fa-3x"></i>
+                    </div>
+                    <h3>Автоматизация</h3>
+                    <p>Создание скриптов и инструментов для автоматизации рабочих процессов, повышения эффективности
+                        бизнеса.</p>
+                </div>
+                <div class="card service-card" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="icon-circle">
+                        <i class="fas fa-paint-brush fa-3x"></i>
+                    </div>
+                    <h3>UI/UX дизайн</h3>
+                    <p>Проектирование удобных и эстетичных интерфейсов для веб и мобильных приложений с учетом
+                        пользовательского опыта.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Портфолио</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                         alt="Веб-проект">
+                    <div class="portfolio-overlay">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Адаптивный веб-сайт для IT-компании</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                         alt="Мобильное приложение">
+                    <div class="portfolio-overlay">
+                        <h3>Мобильное приложение</h3>
+                        <p>Кроссплатформенное приложение для заказа еды</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                         alt="UI/UX Дизайн">
+                    <div class="portfolio-overlay">
+                        <h3>UI/UX Дизайн</h3>
+                        <p>Дизайн системы управления для стартапа</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                         alt="Автоматизация">
+                    <div class="portfolio-overlay">
+                        <h3>Система автоматизации</h3>
+                        <p>Автоматизация бизнес-процессов для компании</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Связаться со мной</h2>
             <div class="social-links">
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
-                <a href="#" title="VKontakte"><i class="fab fa-vk"></i></a>
-                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Azamat225/" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/BCE_BPEMEHHO_A3A" title="Telegram"><i class="fab fa-telegram"></i></a>
+                <a href="https://vk.com/dobruy_naskvoz" title="VKontakte"><i class="fab fa-vk"></i></a>
+                <a href="mailto:azamat_rakhmatullin@bk.ru" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
+    </section>
 
-        <div class="hobbies-card card" data-aos="fade-left" data-aos-duration="1000">
-            <h3>Мои увлечения</h3>
-            <ul>
-                <li class="active"><i class="fas fa-laptop-code"></i> Программирование и разработка</li>
-                <li><i class="fas fa-book"></i> Чтение технической литературы</li>
-                <li><i class="fas fa-rocket"></i> Изучение новых технологий</li>
-                <li><i class="fas fa-brain"></i> Саморазвитие и обучение</li>
-                <li><i class="fas fa-gamepad"></i> Разработка игр</li>
-                <li><i class="fas fa-music"></i> Музыка и звуковой дизайн</li>
-                <li><i class="fas fa-camera"></i> Фотография и дизайн</li>
-                <li><i class="fas fa-dumbbell"></i> Спорт и активный отдых</li>
-            </ul>
-        </div>
-    </div>
-</section>
+</main>
 
-<!-- Навыки -->
-<section class="section skills-section">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Мои навыки</h2>
-        <div class="skills-list">
-            <div class="skill-tag" data-aos="zoom-in">HTML5 & CSS3</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="50">JavaScript</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="100">Python</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="150">React</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="200">UI/UX Design</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="250">Git & GitHub</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="300">Figma</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="350">Web Development</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="400">Mobile Apps</div>
-            <div class="skill-tag" data-aos="zoom-in" data-aos-delay="450">Database Design</div>
-        </div>
-    </div>
-</section>
-
-<!-- Услуги -->
-<section class="section services-section">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Услуги</h2>
-        <div class="grid-4">
-            <div class="card service-card" data-aos="zoom-in">
-                <div class="icon-circle">
-                    <i class="fas fa-code fa-3x"></i>
-                </div>
-                <h3>Веб-разработка</h3>
-                <p>Создание современных, адаптивных сайтов и веб-приложений с использованием современных технологий и
-                    фреймворков.</p>
-            </div>
-            <div class="card service-card" data-aos="zoom-in" data-aos-delay="150">
-                <div class="icon-circle">
-                    <i class="fas fa-mobile-alt fa-3x"></i>
-                </div>
-                <h3>Мобильные приложения</h3>
-                <p>Разработка кросс-платформенных мобильных приложений с современным UI/UX дизайном и высокой
-                    производительностью.</p>
-            </div>
-            <div class="card service-card" data-aos="zoom-in" data-aos-delay="300">
-                <div class="icon-circle">
-                    <i class="fas fa-robot fa-3x"></i>
-                </div>
-                <h3>Автоматизация</h3>
-                <p>Создание скриптов и инструментов для автоматизации рабочих процессов, повышения эффективности
-                    бизнеса.</p>
-            </div>
-            <div class="card service-card" data-aos="zoom-in" data-aos-delay="450">
-                <div class="icon-circle">
-                    <i class="fas fa-paint-brush fa-3x"></i>
-                </div>
-                <h3>UI/UX дизайн</h3>
-                <p>Проектирование удобных и эстетичных интерфейсов для веб и мобильных приложений с учетом
-                    пользовательского опыта.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Портфолио -->
-<section class="section portfolio-section" id="portfolio">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Портфолио</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item" data-aos="fade-up">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                     alt="Веб-проект">
-                <div class="portfolio-overlay">
-                    <h3>Корпоративный сайт</h3>
-                    <p>Адаптивный веб-сайт для IT-компании</p>
-                </div>
-            </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                     alt="Мобильное приложение">
-                <div class="portfolio-overlay">
-                    <h3>Мобильное приложение</h3>
-                    <p>Кроссплатформенное приложение для заказа еды</p>
-                </div>
-            </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                     alt="UI/UX Дизайн">
-                <div class="portfolio-overlay">
-                    <h3>UI/UX Дизайн</h3>
-                    <p>Дизайн системы управления для стартапа</p>
-                </div>
-            </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                     alt="Автоматизация">
-                <div class="portfolio-overlay">
-                    <h3>Система автоматизации</h3>
-                    <p>Автоматизация бизнес-процессов для компании</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Контакт -->
-<section class="section contact-section" id="contact">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Связаться со мной</h2>
-        <div class="social-links">
-            <a href="https://github.com/Azamat225/" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://t.me/BCE_BPEMEHHO_A3A" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="https://vk.com/dobruy_naskvoz" title="VKontakte"><i class="fab fa-vk"></i></a>
-            <a href="mailto:azamat_rakhmatullin@bk.ru" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
-    </div>
-</section>
-
-<!-- Футер -->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer-content">
         <h3>Азамат Рахматуллин</h3>
         <p>IT Developer & Designer из Стерлитамака. Всегда открыт для новых проектов и сотрудничества.</p>
@@ -208,17 +192,14 @@
     </div>
 </footer>
 
-<!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    // Инициализация AOS
     AOS.init({
         once: true,
         duration: 800,
         offset: 100
     });
 
-    // Интерактивные хобби
     document.addEventListener('DOMContentLoaded', () => {
         const hobbyItems = document.querySelectorAll('.hobbies-card li');
         hobbyItems.forEach(item => {
@@ -228,7 +209,6 @@
             });
         });
 
-        // Индикатор прокрутки
         const scrollProgress = document.getElementById('scrollProgress');
         window.addEventListener('scroll', () => {
             const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -236,7 +216,6 @@
             scrollProgress.style.width = scrolled + '%';
         });
 
-        // Переключатель темы
         const themeToggle = document.getElementById('themeToggle');
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
@@ -244,7 +223,6 @@
             if (document.body.classList.contains('dark-theme')) {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
-                // Сохранение темы в localStorage
                 localStorage.setItem('theme', 'dark');
             } else {
                 icon.classList.remove('fa-sun');
@@ -253,7 +231,6 @@
             }
         });
 
-        // Проверка сохраненной темы
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             document.body.classList.add('dark-theme');
@@ -262,13 +239,11 @@
             icon.classList.add('fa-sun');
         }
 
-        // Плавная прокрутка для якорей
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
-
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
@@ -279,7 +254,6 @@
             });
         });
 
-        // Эффект параллакса для секций
         const parallaxBg = document.querySelector('.parallax-bg');
         if(parallaxBg) {
             window.addEventListener('scroll', () => {
@@ -290,7 +264,6 @@
         }
     });
 
-    // Анимация при загрузке
     window.addEventListener('load', () => {
         document.body.classList.add('loaded');
     });
