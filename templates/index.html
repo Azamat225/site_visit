@@ -6,8 +6,8 @@
     <title>Азамат Рахматуллин | IT Developer & Designer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
 
@@ -42,20 +42,18 @@
 
 <main id="main">
 
-    <section class="section profile-section">
+    <section class="section profile-section" id="about">
         <div class="parallax-bg"
              style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
         <div class="container grid-2">
             <div class="profile-card card" data-aos="fade-right" data-aos-duration="1000">
                 <div class="avatar">
-                    <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Фото Азамата"
+                    <img src="static/avatar.jpg" alt="Фото Азамата"
                          onerror="this.src='https://i.pravatar.cc/300?img=13'">
                 </div>
                 <h2>Рахматуллин Азамат Юлаевич</h2>
                 <p class="info"><i class="fas fa-map-marker-alt"></i> 18 лет • Стерлитамак, Башкортостан</p>
-                <p class="bio">Студент IT Top College. Увлекаюсь изучением нового, чтением книг, разработкой и всем, что
-                    связано с технологиями. Стремлюсь создавать крутые проекты и развиваться в IT-сфере. Люблю решать
-                    сложные задачи и изучать новые технологии.</p>
+                <p class="bio">Студент IT Top College. Увлекаюсь изучением нового, чтением книг, разработкой и всем, что связано с технологиями. Стремлюсь создавать крутые проекты и развиваться в IT-сфере.</p>
             </div>
 
             <div class="hobbies-card card" data-aos="fade-left" data-aos-duration="1000">
@@ -73,7 +71,7 @@
         </div>
     </section>
 
-    <section class="section skills-section">
+    <section class="section skills-section" id="skills">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Мои навыки</h2>
             <div class="skills-list">
@@ -88,7 +86,7 @@
         </div>
     </section>
 
-    <section class="section services-section">
+    <section class="section services-section" id="services">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Услуги</h2>
             <div class="grid-4">
@@ -97,32 +95,28 @@
                         <i class="fas fa-code fa-3x"></i>
                     </div>
                     <h3>Веб-разработка</h3>
-                    <p>Создание современных, адаптивных сайтов и веб-приложений с использованием современных технологий и
-                        фреймворков.</p>
+                    <p>Создание современных, адаптивных сайтов и веб-приложений с использованием современных технологий и фреймворков.</p>
                 </div>
                 <div class="card service-card" data-aos="zoom-in" data-aos-delay="150">
                     <div class="icon-circle">
                         <i class="fas fa-mobile-alt fa-3x"></i>
                     </div>
                     <h3>Мобильные приложения</h3>
-                    <p>Разработка кросс-платформенных мобильных приложений с современным UI/UX дизайном и высокой
-                        производительностью.</p>
+                    <p>Разработка кросс-платформенных мобильных приложений с современным UI/UX дизайном и высокой производительностью.</p>
                 </div>
                 <div class="card service-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-circle">
                         <i class="fas fa-robot fa-3x"></i>
                     </div>
                     <h3>Автоматизация</h3>
-                    <p>Создание скриптов и инструментов для автоматизации рабочих процессов, повышения эффективности
-                        бизнеса.</p>
+                    <p>Создание скриптов и инструментов для автоматизации рабочих процессов, повышения эффективности бизнеса.</p>
                 </div>
                 <div class="card service-card" data-aos="zoom-in" data-aos-delay="450">
                     <div class="icon-circle">
                         <i class="fas fa-paint-brush fa-3x"></i>
                     </div>
                     <h3>UI/UX дизайн</h3>
-                    <p>Проектирование удобных и эстетичных интерфейсов для веб и мобильных приложений с учетом
-                        пользовательского опыта.</p>
+                    <p>Проектирование удобных и эстетичных интерфейсов для веб и мобильных приложений с учетом пользовательского опыта.</p>
                 </div>
             </div>
         </div>
@@ -133,32 +127,28 @@
             <h2 class="section-title" data-aos="fade-up">Портфолио</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="Веб-проект">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Веб-проект">
                     <div class="portfolio-overlay">
                         <h3>Корпоративный сайт</h3>
                         <p>Адаптивный веб-сайт для IT-компании</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="Мобильное приложение">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Мобильное приложение">
                     <div class="portfolio-overlay">
                         <h3>Мобильное приложение</h3>
                         <p>Кроссплатформенное приложение для заказа еды</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="UI/UX Дизайн">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="UI/UX Дизайн">
                     <div class="portfolio-overlay">
                         <h3>UI/UX Дизайн</h3>
                         <p>Дизайн системы управления для стартапа</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                         alt="Автоматизация">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Автоматизация">
                     <div class="portfolio-overlay">
                         <h3>Система автоматизации</h3>
                         <p>Автоматизация бизнес-процессов для компании</p>
@@ -184,10 +174,18 @@
 
 <footer class="footer" id="footer">
     <div class="footer-content">
-        <h3>Азамат Рахматуллин</h3>
-        <p>IT Developer & Designer из Стерлитамака. Всегда открыт для новых проектов и сотрудничества.</p>
+        <div class="footer-logo">
+            <h3>Азамат Рахматуллин</h3>
+        </div>
+        <p>IT Developer & Designer из Стерлитамака.<br>Всегда открыт для новых проектов и сотрудничества.</p>
+        <div class="footer-social">
+            <a href="https://github.com/Azamat225/" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/BCE_BPEMEHHO_A3A" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://vk.com/dobruy_naskvoz" title="VKontakte"><i class="fab fa-vk"></i></a>
+            <a href="mailto:azamat_rakhmatullin@bk.ru" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
         <div class="copyright">
-            &copy; 2023 Азамат Рахматуллин. Все права защищены.
+            &copy; 2026 Азамат Рахматуллин. Все права защищены.
         </div>
     </div>
 </footer>
@@ -201,21 +199,24 @@
     });
 
     document.addEventListener('DOMContentLoaded', () => {
+        // Увлечения — активный элемент
         const hobbyItems = document.querySelectorAll('.hobbies-card li');
         hobbyItems.forEach(item => {
-            item.addEventListener('click', () => {
+            item.addEventListener('mouseenter', () => {
                 hobbyItems.forEach(i => i.classList.remove('active'));
                 item.classList.add('active');
             });
         });
 
+        // Прогресс-бар прокрутки
         const scrollProgress = document.getElementById('scrollProgress');
         window.addEventListener('scroll', () => {
-            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (window.scrollY / windowHeight) * 100;
-            scrollProgress.style.width = scrolled + '%';
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / totalHeight) * 100;
+            scrollProgress.style.width = `${scrolled}%`;
         });
 
+        // Переключение темы
         const themeToggle = document.getElementById('themeToggle');
         themeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
@@ -231,6 +232,7 @@
             }
         });
 
+        // Загрузка сохранённой темы
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             document.body.classList.add('dark-theme');
@@ -239,6 +241,7 @@
             icon.classList.add('fa-sun');
         }
 
+        // Плавная навигация
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -254,6 +257,7 @@
             });
         });
 
+        // Parallax
         const parallaxBg = document.querySelector('.parallax-bg');
         if(parallaxBg) {
             window.addEventListener('scroll', () => {
@@ -262,10 +266,6 @@
                 parallaxBg.style.transform = `translate3d(0, ${rate}px, 0)`;
             });
         }
-    });
-
-    window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
     });
 </script>
 </body>
